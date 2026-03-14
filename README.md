@@ -1,2 +1,0 @@
-# growziq
-Catfishing Website
