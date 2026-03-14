@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+<title>Request Received | Growziq</title>
+
+<style>
+
+:root{
+--primary:#c084fc;
+--cyan:#67e8f9;
+--bg-dark:#0f172a;
+--bg-card:#1e293b;
+--border:#334155;
+--text-primary:#f1f5f9;
+--text-secondary:#cbd5e1;
+--gradient-1:linear-gradient(135deg,#c084fc 0%,#a78bfa 50%,#67e8f9 100%);
+--font-code:monospace;
+--font-primary:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:var(--bg-dark);
+color:var(--text-primary);
+font-family:var(--font-primary);
+padding:20px;
+}
+
+.success-container{
+background:var(--bg-card);
+border:1px solid var(--border);
+padding:48px 42px;
+border-radius:18px;
+text-align:center;
+max-width:480px;
+width:100%;
+box-shadow:0 25px 60px rgba(0,0,0,0.45);
+}
+
+.logo{
+font-family:var(--font-code);
+font-size:26px;
+font-weight:700;
+margin-bottom:24px;
+letter-spacing:1px;
+}
+
+.logo span{
+background:var(--gradient-1);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.success-title{
+font-family:var(--font-code);
+font-size:30px;
+margin-bottom:14px;
+color:var(--primary);
+}
+
+.success-text{
+color:var(--text-secondary);
+line-height:1.7;
+font-size:16px;
+margin-bottom:22px;
+}
+
+.response-time{
+font-size:14px;
+margin-bottom:30px;
+color:var(--cyan);
+opacity:0.9;
+}
+
+.back-btn{
+display:inline-block;
+padding:13px 26px;
+border-radius:14px;
+text-decoration:none;
+font-weight:600;
+background:var(--gradient-1);
+color:white;
+transition:all .2s ease;
+}
+
+.back-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(192,132,252,0.35);
+}
+
+@media (max-width:600px){
+
+.success-container{
+padding:36px 28px;
+}
+
+.success-title{
+font-size:24px;
+}
+
+.success-text{
+font-size:15px;
+}
+
+.logo{
+font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="success-container">
+
+<div class="logo">&lt; <span>Growziq</span> /&gt;</div>
+
+<h1 class="success-title">🚀 Request Received</h1>
+
+<p class="success-text">
+Your website request has been received.<br>
+We will review your Instagram page and contact you soon.
+</p>
+
+<p class="response-time">
+Typical response time: &lt; 24 hours
+</p>
+
+<a href="/" class="back-btn">Back to Website</a>
+
+</div>
+
+</body>
+</html>
