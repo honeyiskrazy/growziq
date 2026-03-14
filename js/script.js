@@ -497,6 +497,19 @@ function initHeroAnimations() {
     }
 }
 
+function handleFormSubmit(e) {
+    e.preventDefault();
+    fetch('https://formspree.io/f/xvzwqlzj', {
+        method: 'POST',
+        body: new FormData(e.target),
+        headers: { 'Accept': 'application/json' }
+    }).then(() => {
+        window.location.href = '/thx/thankyou.html';
+    }).catch(() => {
+        alert('Something went wrong. Please try again.');
+    });
+}
+
 function initSkillAnimations() {
     const skillsSection = document.getElementById('skills');
     if (!skillsSection) return;
