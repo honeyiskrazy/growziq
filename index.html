@@ -559,9 +559,11 @@
                         </div>
                     </div>
                     
-                    <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" action="/thankyou.html">
+                    <form class="contact-form" id="contactForm"
+method="POST"
+action="https://email.gosecureserver.in/api/send.php">
 
-<input type="hidden" name="form-name" value="contact">
+<input type="hidden" name="to" value="YOUR_EMAIL@gmail.com">
 
 <div class="form-group">
 <input type="text" name="name" class="form-input" placeholder="Name" data-placeholder-en="Name" data-placeholder-ar="الاسم" required>
@@ -572,11 +574,16 @@
 </div>
 
 <div class="form-group">
-<input type="text" name="instagram_page" class="form-input" placeholder="Instagram Page (Optional)">
+<input type="text" name="instagram_page" class="form-input" placeholder="Instagram Page">
 </div>
 
 <div class="form-group">
 <textarea name="message" class="form-input form-textarea" rows="5" placeholder="Message" data-placeholder-en="Message" data-placeholder-ar="الرسالة" required></textarea>
+</div>
+
+<!-- spam protection -->
+<div style="display:none">
+<input type="text" name="hp_email">
 </div>
 
 <button type="submit" class="btn btn-primary btn-submit">
