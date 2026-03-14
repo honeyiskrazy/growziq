@@ -559,17 +559,12 @@
                         </div>
                     </div>
                     
-                    <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" action="/thankyou.html">
 
 <input type="hidden" name="form-name" value="contact">
 
-<!-- Spam protection -->
-<p hidden>
-<label>Don’t fill this out if you're human: <input name="bot-field"></label>
-</p>
-
 <div class="form-group">
-<input type="text" name="name" class="form-input" placeholder="Name" data-placeholder-en="Name" data-placeholder-ar="الاسم" minlength="2" required>
+<input type="text" name="name" class="form-input" placeholder="Name" data-placeholder-en="Name" data-placeholder-ar="الاسم" required>
 </div>
 
 <div class="form-group">
@@ -577,11 +572,11 @@
 </div>
 
 <div class="form-group">
-<input type="text" name="instagram_page" placeholder="Instagram Page">
+<input type="text" name="subject" class="form-input" placeholder="Subject" data-placeholder-en="Subject" data-placeholder-ar="الموضوع" required>
 </div>
 
 <div class="form-group">
-<textarea name="message" class="form-input form-textarea" rows="5" placeholder="Message" data-placeholder-en="Message" data-placeholder-ar="الرسالة" minlength="10" required></textarea>
+<textarea name="message" class="form-input form-textarea" rows="5" placeholder="Message" data-placeholder-en="Message" data-placeholder-ar="الرسالة" required></textarea>
 </div>
 
 <button type="submit" class="btn btn-primary btn-submit">
