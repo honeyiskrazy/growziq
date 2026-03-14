@@ -223,20 +223,6 @@ function initFormHandlers() {
     }
 }
 
-function handleFormSubmit(e) {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
-    console.log('Form submitted:', data);
-    
-    const message = AppState.currentLang === 'ar' 
-        ? 'تم إرسال الرسالة بنجاح!' 
-        : 'Message sent successfully!';
-    
-    alert(message);
-    e.target.reset();
-}
-
 function initMobileMenu() {
     const menuToggle = document.getElementById('menuToggle');
     if (menuToggle) {
