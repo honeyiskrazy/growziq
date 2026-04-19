@@ -439,46 +439,19 @@
                         <!-- Contact Form -->
                         <div class="bg-white border border-gray-100 rounded-2xl p-8 md:p-10 shadow-sm">
                             <h2 class="font-bold text-xl text-brand-dark mb-6">Send us a message</h2>
-                            <form onsubmit="event.preventDefault(); alert('Form submission simulation. In production, this would connect to your backend or Tally form.');" class="space-y-5">
-                                <div>
-                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Your Name *</label>
-                                    <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Business Name & Type *</label>
-                                    <input type="text" required placeholder="e.g. Sharma Sweets - Local Bakery" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Which plan are you interested in? *</label>
-                                    <select required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-600 focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
-                                        <option value="" disabled selected>Please choose a plan...</option>
-                                        <option value="starter">Starter (&#8377;599)</option>
-                                        <option value="growth">Growth (&#8377;1,299) - Most Popular</option>
-                                        <option value="business">Business (&#8377;2,499)</option>
-                                        <option value="premium">Premium (&#8377;4,499)</option>
-                                        <option value="unsure">I'm not sure, help me decide</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address *</label>
-                                    <input type="email" required placeholder="name@example.com" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-semibold text-gray-700 mb-1">WhatsApp Number (Optional)</label>
-                                    <input type="tel" placeholder="+91" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
-                                </div>
-                                <div class="flex items-start gap-3 py-2">
-                                    <input type="checkbox" required id="consent" class="mt-1 w-4 h-4 text-brand-action border-gray-300 rounded focus:ring-brand-action">
-                                    <label for="consent" class="text-xs text-gray-500 leading-tight">
-                                        I agree to the <a href="tos.html" class="text-brand-action hover:underline">Terms of Service</a> and <a href="privacy.html" class="text-brand-action hover:underline">Privacy Policy</a>. I confirm I am over 18 years of age.
-                                    </label>
-                                </div>
-                                <div class="pt-2">
-                                    <button type="submit" class="w-full cta-premium py-4">
-                                        <span>Submit Application <i class="fa-solid fa-paper-plane text-xs"></i></span>
-                                    </button>
-                                </div>
-                            </form>
+                            <div class="bg-white border border-gray-100 rounded-2xl p-4 md:p-6 shadow-sm">
+  <iframe 
+    data-tally-src="https://tally.so/r/5Bqpgb" 
+    loading="lazy" 
+    width="100%" 
+    height="600" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0" 
+    title="Contact Form">
+  </iframe>
+</div>
+                               
                         </div>
 
                         <!-- Direct Contact Options -->
@@ -577,7 +550,25 @@
             <p>© 2026 Growziq™ | All rights reserved</p>
         </div>
     </footer>
-
+<script>
+  var d = document, w = "https://tally.so/widgets/embed.js", v = function() {
+    if (typeof Tally !== "undefined") {
+      Tally.loadEmbeds();
+    } else {
+      d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e) {
+        e.src = e.dataset.tallySrc;
+      });
+    }
+  };
+  if (typeof Tally !== "undefined") v();
+  else if (d.querySelector('script[src="' + w + '"]') == null) {
+    var s = d.createElement("script");
+    s.src = w;
+    s.onload = v;
+    s.onerror = v;
+    d.body.appendChild(s);
+  }
+</script>
 </body>
 </html>
 
