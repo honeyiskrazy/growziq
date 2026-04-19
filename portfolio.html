@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - Growziq | Real Websites for Real Businesses</title>
+    <meta name="description" content="See real websites we've built for local businesses in India. No fake mockups - just honest, delivered work for actual clients.">
+    <meta property="og:title" content="Our Work - Growziq">
+    <meta property="og:description" content="Real websites built for real local businesses. View our portfolio.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (via CDN for rapid single-file styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration & Custom CSS -->
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body class="bg-brand-white text-gray-600 font-poppins text-base">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="sticky top-0 left-0 w-full bg-brand-white border-b border-gray-100 z-50 transition-shadow duration-300">
+        <div class="max-w-container mx-auto px-4 sm:px-5 h-16 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="nav-link nav-logo flex items-center justify-center gap-2 h-full" data-target="home">
+                <img src="assets/img/logo.png" alt="Growziq" class="h-9 sm:h-10">
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center justify-center gap-7 lg:gap-8 font-medium text-[15px] lg:text-base h-full">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="home">Home</a>
+                <a href="services.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="services">Services & Pricing</a>
+                <a href="portfolio.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="portfolio">Portfolio</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="about">About</a>
+            </div>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center justify-end gap-4 h-full">
+                <button class="nav-link cta-premium hidden md:inline-flex" data-target="contact">
+                    <span>Get Started <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-brand-dark text-2xl" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg z-40">
+            <div class="flex flex-col items-center px-4 sm:px-5 py-3 gap-2.5 font-medium text-[15px] text-center">
+                <a href="index.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="home">Home</a>
+                <a href="services.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="services">Services & Pricing</a>
+                <a href="portfolio.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="portfolio">Portfolio</a>
+                <a href="about.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="about">About</a>
+                <button class="nav-link cta-premium w-full mt-2" data-target="contact">
+                    <span>Get Started <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main id="app-container">
+
+        <!-- ============================================== -->
+        <!-- VIEW: PORTFOLIO                                -->
+        <!-- ============================================== -->
+        <div id="view-portfolio" class="view-section">
+            <section class="py-20 bg-white">
+                <div class="max-w-container mx-auto px-5 text-center">
+                    <h1 class="hero-headline text-4xl md:text-[56px] leading-[1.25] md:leading-[1.2] text-brand-dark mb-6">Real Businesses. Real Websites. <span class="text-brand-action">Real Projects.</span></h1>
+                    <p class="text-lg text-gray-600 mb-12">No fake agency mockups. Just honest, delivered work for actual clients.</p>
+                    
+                    <!-- Filter Bar -->
+                    <div class="flex flex-wrap justify-center gap-3 mb-16">
+                        <button data-filter="all" class="px-5 py-2 rounded-full bg-brand-dark text-white font-medium text-sm">All</button>
+                        <button data-filter="starter" class="px-5 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium text-sm transition">Starter</button>
+                        <button data-filter="growth" class="px-5 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium text-sm transition">Growth</button>
+                        <button data-filter="business" class="px-5 py-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium text-sm transition">Business</button>
+                    </div>
+
+                    <!-- Projects Grid -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left mb-16">
+                        
+                        <!-- Project 1 (Kaushal Uphaar) -->
+                        <div data-plan="starter" class="group border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="bg-gray-100 h-56 w-full relative border-b border-gray-200 p-4 pb-0 flex flex-col">
+                                <!-- Browser Header -->
+                                <div class="bg-white rounded-t-xl w-full h-full border border-b-0 border-gray-200 shadow-sm flex flex-col overflow-hidden">
+                                    <div class="h-8 bg-gray-50 border-b border-gray-200 flex items-center px-3 gap-1.5">
+                                        <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                        <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                        <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                    </div>
+                                    <div class="flex-1 bg-white p-4">
+                                        <div class="h-6 w-32 bg-gray-200 rounded mb-4"></div>
+                                        <div class="h-24 w-full bg-[#fce7f3] rounded flex items-center justify-center">
+                                            <i class="fa-solid fa-gift text-3xl text-pink-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="font-bold text-xl text-brand-dark">Kaushal Uphaar</h3>
+                                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-100 text-gray-600 px-2 py-1 rounded">Starter</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-6">Local Gift Shop</p>
+                                <a href="https://kaushaluphaar.pages.dev" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 border border-brand-action text-brand-action font-semibold rounded-lg group-hover:bg-brand-action group-hover:text-white transition text-center">View Live Site</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 (Placeholder real site) -->
+                        <div data-plan="growth" class="group border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="bg-gray-100 h-56 w-full relative border-b border-gray-200 p-4 pb-0 flex flex-col">
+                                <div class="bg-white rounded-t-xl w-full h-full border border-b-0 border-gray-200 shadow-sm flex flex-col overflow-hidden">
+                                    <div class="h-8 bg-gray-50 border-b border-gray-200 flex items-center px-3 gap-1.5">
+                                        <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                        <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                        <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                    </div>
+                                    <div class="flex-1 bg-white p-4">
+                                        <div class="h-6 w-24 bg-gray-200 rounded mb-4"></div>
+                                        <div class="h-24 w-full bg-[#e0f2fe] rounded flex items-center justify-center">
+                                            <i class="fa-solid fa-print text-3xl text-blue-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="font-bold text-xl text-brand-dark">Simran Printers</h3>
+                                    <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 px-2 py-1 rounded">Growth</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-6">Commercial Printing</p>
+                                <a href="#" class="block w-full py-2.5 border border-brand-action text-brand-action font-semibold rounded-lg group-hover:bg-brand-action group-hover:text-white transition text-center">View Live Site</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 (Placeholder real site) -->
+                        <div data-plan="starter" class="group border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                            <div class="bg-gray-100 h-56 w-full relative border-b border-gray-200 p-4 pb-0 flex flex-col">
+                                <div class="bg-white rounded-t-xl w-full h-full border border-b-0 border-gray-200 shadow-sm flex flex-col overflow-hidden">
+                                    <div class="h-8 bg-gray-50 border-b border-gray-200 flex items-center px-3 gap-1.5">
+                                        <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                        <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                        <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                    </div>
+                                    <div class="flex-1 bg-white p-4">
+                                        <div class="h-6 w-40 bg-gray-200 rounded mb-4"></div>
+                                        <div class="h-24 w-full bg-[#f3e8ff] rounded flex items-center justify-center">
+                                            <i class="fa-solid fa-shirt text-3xl text-purple-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="font-bold text-xl text-brand-dark">Rohit Garments</h3>
+                                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-100 text-gray-600 px-2 py-1 rounded">Starter</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-6">Retail Clothing</p>
+                                <a href="#" class="block w-full py-2.5 border border-brand-action text-brand-action font-semibold rounded-lg group-hover:bg-brand-action group-hover:text-white transition text-center">View Live Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-500 font-medium">More projects launching soon.</p>
+                </div>
+            </section>
+
+            <section class="py-16 sm:py-20 bg-white text-center">
+                <div class="max-w-container mx-auto px-5">
+                    <div class="bg-brand-dark rounded-2xl py-14 sm:py-16 px-6 sm:px-10 shadow-sm">
+                        <h2 class="hero-headline text-3xl md:text-5xl text-white mb-10">Your business could be next.</h2>
+                        <button class="nav-link cta-premium py-4 px-10 text-lg" data-target="contact">
+                            <span>Get Started <i class="fa-solid fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW: CONTACT                                  -->
+        <!-- ============================================== -->
+        <div id="view-contact" class="view-section">
+            <section class="py-20 md:py-28 bg-brand-white">
+                <div class="max-w-container mx-auto px-5">
+                    <div class="max-w-2xl mx-auto text-center mb-14">
+                        <h1 class="hero-headline text-3xl md:text-5xl text-brand-dark mb-4">Tell Us About Your Business</h1>
+                        <p class="text-lg text-gray-600">We'll review and send your exact scope within 24 hours. No calls required.</p>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+                        <!-- Contact Form -->
+                        <div class="bg-white border border-gray-100 rounded-2xl p-8 md:p-10 shadow-sm">
+                            <h2 class="font-bold text-xl text-brand-dark mb-6">Send us a message</h2>
+                            <form onsubmit="event.preventDefault(); alert('Form submission simulation. In production, this would connect to your backend or Tally form.');" class="space-y-5">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Your Name *</label>
+                                    <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Business Name & Type *</label>
+                                    <input type="text" required placeholder="e.g. Sharma Sweets - Local Bakery" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Which plan are you interested in? *</label>
+                                    <select required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-600 focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                        <option value="" disabled selected>Please choose a plan...</option>
+                                        <option value="starter">Starter (&#8377;599)</option>
+                                        <option value="growth">Growth (&#8377;1,299) - Most Popular</option>
+                                        <option value="business">Business (&#8377;2,499)</option>
+                                        <option value="premium">Premium (&#8377;4,499)</option>
+                                        <option value="unsure">I'm not sure, help me decide</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address *</label>
+                                    <input type="email" required placeholder="name@example.com" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">WhatsApp Number (Optional)</label>
+                                    <input type="tel" placeholder="+91" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                </div>
+                                <div class="flex items-start gap-3 py-2">
+                                    <input type="checkbox" required id="consent-portfolio" class="mt-1 w-4 h-4 text-brand-action border-gray-300 rounded focus:ring-brand-action">
+                                    <label for="consent-portfolio" class="text-xs text-gray-500 leading-tight">
+                                        I agree to the <a href="tos.html" class="text-brand-action hover:underline">Terms of Service</a> and <a href="privacy.html" class="text-brand-action hover:underline">Privacy Policy</a>. I confirm I am over 18 years of age.
+                                    </label>
+                                </div>
+                                <div class="pt-2">
+                                    <button type="submit" class="w-full cta-premium py-4">
+                                        <span>Submit Application <i class="fa-solid fa-paper-plane text-xs"></i></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Direct Contact Options -->
+                        <div class="space-y-6">
+                            <div>
+                                <h2 class="font-bold text-xl text-brand-dark mb-4">Prefer to talk directly?</h2>
+                                <p class="text-gray-600 text-sm mb-6">Drop us a WhatsApp message or email. We typically reply within a few hours during business hours (10 AM&ndash;7 PM IST).</p>
+                            </div>
+
+                            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
+                               class="flex items-center gap-4 p-5 bg-white border border-gray-100 rounded-xl hover:border-brand-action transition group shadow-sm">
+                                <div class="bg-green-100 text-green-600 p-3 rounded-lg group-hover:bg-brand-action group-hover:text-white transition">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-gray-900">WhatsApp</div>
+                                    <div class="text-sm text-gray-500">Chat with us directly</div>
+                                </div>
+                                <i class="fa-solid fa-arrow-right ml-auto text-gray-300 group-hover:text-brand-action transition"></i>
+                            </a>
+
+                            <a href="mailto:dev.growziq@gmail.com"
+                               class="flex items-center gap-4 p-5 bg-white border border-gray-100 rounded-xl hover:border-brand-action transition group shadow-sm">
+                                <div class="bg-brand-accent text-brand-action p-3 rounded-lg group-hover:bg-brand-action group-hover:text-white transition">
+                                    <i class="fa-solid fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-gray-900">Email Us</div>
+                                    <div class="text-sm text-gray-500">dev.growziq@gmail.com</div>
+                                </div>
+                                <i class="fa-solid fa-arrow-right ml-auto text-gray-300 group-hover:text-brand-action transition"></i>
+                            </a>
+
+                            <!-- Contact FAQ Integrated -->
+                            <div class="pt-4">
+                                <h3 class="font-bold text-lg text-brand-dark mb-4">Quick Questions</h3>
+                                <div class="space-y-3">
+                                    <details class="bg-white border border-gray-100 rounded-xl group cursor-pointer shadow-sm">
+                                        <summary class="font-bold text-gray-900 p-4 text-sm flex justify-between items-center">
+                                            What happens next?
+                                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                                        </summary>
+                                        <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed">
+                                            We review your details and email/WhatsApp you within 24 hours with a scope confirmation and next steps.
+                                        </div>
+                                    </details>
+                                    <details class="bg-white border border-gray-100 rounded-xl group cursor-pointer shadow-sm">
+                                        <summary class="font-bold text-gray-900 p-4 text-sm flex justify-between items-center">
+                                            Is submission free?
+                                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                                        </summary>
+                                        <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed">
+                                            Yes, 100% free. We only charge when we officially agree to start building your site.
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="growziq-footer">
+        <div class="footer-growziq-content">
+            <div class="footer-section">
+                <h4>Growziq</h4>
+                <p>Grow with us</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="services.html">Pricing &amp; Plans</a>
+                <a href="about.html">About Us</a>
+                <a href="portfolio.html">Our Work</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="tos.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <p><strong>dev.growziq@gmail.com</strong></p>
+                <a href="https://www.instagram.com/growziq/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Growziq™ | All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

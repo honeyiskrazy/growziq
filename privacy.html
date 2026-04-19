@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Growziq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Privacy Policy for Growziq - How we collect, use, and protect your data in compliance with India's DPDP Act, 2023.">
+</head>
+<body class="legal-page-body">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="sticky top-0 left-0 w-full bg-brand-white border-b border-gray-100 z-50 transition-shadow duration-300">
+        <div class="max-w-container mx-auto px-4 sm:px-5 h-16 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="nav-link nav-logo flex items-center justify-center gap-2 h-full" data-target="home">
+                <img src="assets/img/logo.png" alt="Growziq" class="h-9 sm:h-10">
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center justify-center gap-7 lg:gap-8 font-medium text-[15px] lg:text-base h-full">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="home">Home</a>
+                <a href="services.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="services">Services & Pricing</a>
+                <a href="portfolio.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="portfolio">Portfolio</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="about">About</a>
+            </div>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center justify-end gap-4 h-full">
+                <button class="nav-link cta-premium hidden md:inline-flex" data-target="contact">
+                    <span>Get Started <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-brand-dark text-2xl" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg z-40">
+            <div class="flex flex-col items-center px-4 sm:px-5 py-3 gap-2.5 font-medium text-[15px] text-center">
+                <a href="index.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="home">Home</a>
+                <a href="services.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="services">Services & Pricing</a>
+                <a href="portfolio.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="portfolio">Portfolio</a>
+                <a href="about.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="about">About</a>
+                <button class="nav-link cta-premium w-full mt-2" data-target="contact">
+                    <span>Get Started <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="legal-hero">
+        <div class="max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-2 bg-white/10 text-white/80 text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+                <i class="fa-solid fa-shield-halved text-brand-cyan"></i> Legal Document
+            </div>
+            <h1>Privacy Policy</h1>
+            <p class="meta mt-2">
+                Effective: April 2026 &nbsp;&bull;&nbsp; Governed by: DPDP Act, 2023 (India)
+                &nbsp;&bull;&nbsp; Contact: <a href="mailto:dev.growziq@gmail.com">dev.growziq@gmail.com</a>
+            </p>
+            <p class="meta mt-1">
+                Also see: <a href="tos.html">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="legal-content">
+
+        <div class="legal-callout">
+            <strong>Plain-language summary:</strong> Growziq collects only what is needed to build your website, never sells your data, and complies with India's DPDP Act, 2023. Full details below.
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="legal-toc">
+            <h4>Table of Contents</h4>
+            <ol>
+                <li><a href="#who-we-are">1. Who We Are &amp; Scope</a></li>
+                <li><a href="#what-we-collect">2. What Data We Collect &amp; Why</a></li>
+                <li><a href="#how-we-use">3. How We Use Your Data</a></li>
+                <li><a href="#retention">4. Data Retention</a></li>
+                <li><a href="#third-parties">5. Third-Party Processors</a></li>
+                <li><a href="#your-rights">6. Your Rights</a></li>
+                <li><a href="#consent">7. Consent</a></li>
+                <li><a href="#security">8. Security &amp; Breach Response</a></li>
+                <li><a href="#cookies">9. Cookies</a></li>
+                <li><a href="#minors">10. Minors</a></li>
+                <li><a href="#transfers">11. Cross-Border Transfers</a></li>
+                <li><a href="#updates">12. Policy Updates</a></li>
+                <li><a href="#law">13. Governing Law &amp; Disputes</a></li>
+                <li><a href="#contact-us">14. Grievance Officer &amp; Contact</a></li>
+            </ol>
+        </div>
+
+        <!-- Section 1 -->
+        <section id="who-we-are" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">1</span> Who We Are &amp; Scope</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>
+                    Growziq is a web design and development service operating from Ludhiana, Punjab, India. This Privacy Policy explains how we collect, use, store, and protect your personal data in connection with our services. By submitting our intake form and proceeding with our services, you consent to the practices described herein. This Policy operates in conjunction with our <a href="tos.html" class="text-brand-action hover:underline">Terms of Service</a>.
+                </p>
+                <p>
+                    Growziq is a <strong>Data Fiduciary</strong> as defined under the Digital Personal Data Protection Act, 2023 (DPDP Act) to the extent applicable to our operations and scale. We process personal data only for the purpose of delivering services you have contracted with us.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="what-we-collect" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">2</span> What Data We Collect &amp; Why</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>We collect only the minimum personal data necessary to deliver our services.</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data Category</th>
+                                <th>Source</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Full name &amp; business name</td>
+                                <td>Intake form</td>
+                                <td>Project identification, invoicing</td>
+                            </tr>
+                            <tr>
+                                <td>Email address</td>
+                                <td>Intake form</td>
+                                <td>Project communication, invoicing, support</td>
+                            </tr>
+                            <tr>
+                                <td>WhatsApp / phone number</td>
+                                <td>Intake form / direct message</td>
+                                <td>Project communication</td>
+                            </tr>
+                            <tr>
+                                <td>Business details (type, city, services)</td>
+                                <td>Intake form</td>
+                                <td>Scope design, content creation</td>
+                            </tr>
+                            <tr>
+                                <td>Hosting / domain credentials</td>
+                                <td>Provided by client during build</td>
+                                <td>Website deployment - deleted immediately after handover</td>
+                            </tr>
+                            <tr>
+                                <td>Payment confirmation metadata</td>
+                                <td>Razorpay invoice</td>
+                                <td>Financial records (tax compliance)</td>
+                            </tr>
+                            <tr>
+                                <td>Consent metadata (IP, timestamp, form version)</td>
+                                <td>Intake form submission</td>
+                                <td>Evidence of valid consent under DPDP Act</td>
+                            </tr>
+                            <tr>
+                                <td>Selected plan and add-ons</td>
+                                <td>Intake form</td>
+                                <td>Project scoping, resource allocation</td>
+                            </tr>
+                            <tr>
+                                <td>Project communications (emails/WhatsApp)</td>
+                                <td>Direct interaction</td>
+                                <td>Clarifying requirements, delivering updates</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="legal-callout">
+                    <strong>We do NOT collect:</strong> Aadhaar numbers, PAN numbers, bank account details, credit/debit card numbers, biometric data, health data, or any sensitive personal data. Payment card data is processed entirely by Razorpay - Growziq never sees or stores card details.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="how-we-use" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">3</span> How We Use Your Data</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>Your data is used exclusively for the following purposes. We do not use your data for any other purpose without your explicit consent.</p>
+                <ul>
+                    <li>Delivering the web design and development service you have contracted - building, deploying, and handing over your website per the confirmed scope.</li>
+                    <li>Communicating with you throughout the project - sending scope confirmations, invoices, progress updates, feedback requests, and handover documentation.</li>
+                    <li>Generating and issuing invoices and maintaining financial records as required by Indian tax law.</li>
+                    <li>Responding to support requests during the 7-day Support Period.</li>
+                    <li>Maintaining records for dispute resolution - project scope, communications, and delivery documentation retained to defend against or resolve client disputes.</li>
+                    <li>Complying with legal obligations - retaining financial records per the Income Tax Act, 1961 and responding to lawful requests from government authorities.</li>
+                </ul>
+                <p><strong>We do NOT use your data for:</strong> advertising, marketing to third parties, profiling, selling to third parties, or any purpose unrelated to delivering your project.</p>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="retention" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">4</span> Data Retention</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>We retain your data only as long as necessary for the stated purpose or as required by law.</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data Category</th>
+                                <th>Retention Period</th>
+                                <th>Reason</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Project communications (email/WhatsApp)</td>
+                                <td>24 months from project close</td>
+                                <td>Dispute resolution / Internal records</td>
+                            </tr>
+                            <tr>
+                                <td>Intake form data</td>
+                                <td>36 months from project close</td>
+                                <td>Dispute resolution / consent records</td>
+                            </tr>
+                            <tr>
+                                <td>Invoices &amp; payment records</td>
+                                <td>7 years</td>
+                                <td>Income Tax Act, 1961 (mandatory)</td>
+                            </tr>
+                            <tr>
+                                <td>Hosting / domain credentials</td>
+                                <td>Deleted immediately upon handover</td>
+                                <td>No longer needed after delivery</td>
+                            </tr>
+                            <tr>
+                                <td>Consent metadata</td>
+                                <td>36 months</td>
+                                <td>DPDP Act compliance evidence</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    <strong>Financial records exception:</strong> Even if you request erasure of your personal data, Growziq is legally required to retain invoices and payment records for 7 years under the Income Tax Act. Where erasure is requested, we will delete all data except legally mandated financial records and notify you in writing of what was retained and the legal basis.
+                </p>
+                <p>
+                    <strong>WhatsApp note:</strong> WhatsApp (Meta) may retain message data on their servers per their own privacy policy, outside Growziq's control. Project data deletion by Growziq is "where technically feasible" - we cannot guarantee deletion from third-party servers.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="third-parties" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">5</span> Third-Party Processors</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>In delivering our services, we use the following third-party platforms that may process your personal data. Each processes data per their own privacy policies. Growziq has no control over third-party data handling beyond the scope of our use of their services.</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Processor</th>
+                                <th>Purpose</th>
+                                <th>Data Shared</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tally.so</td>
+                                <td>Intake form collection</td>
+                                <td>All intake form fields</td>
+                            </tr>
+                            <tr>
+                                <td>Razorpay</td>
+                                <td>Payment processing</td>
+                                <td>Name, email, amount</td>
+                            </tr>
+                            <tr>
+                                <td>Google (Gmail, Drive, Workspace)</td>
+                                <td>Project communication &amp; file storage</td>
+                                <td>Email, project files</td>
+                            </tr>
+                            <tr>
+                                <td>Meta (WhatsApp)</td>
+                                <td>Project communication</td>
+                                <td>Phone number, messages</td>
+                            </tr>
+                            <tr>
+                                <td>Zapier</td>
+                                <td>Intake form automation</td>
+                                <td>Intake form fields routed to Google Sheets</td>
+                            </tr>
+                            <tr>
+                                <td>Google Analytics / Search Console</td>
+                                <td>Website traffic analytics</td>
+                                <td>Anonymous IP, page views, search queries</td>
+                            </tr>
+                            <tr>
+                                <td>Cloudflare Pages / GitHub</td>
+                                <td>Website hosting & code storage</td>
+                                <td>Website source code, static assets</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Growziq does <strong>not sell, rent, or trade</strong> your personal data to any third party. Data is shared with the above processors solely to the extent necessary to deliver your project.</p>
+            </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="your-rights" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">6</span> Your Rights</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>As a Data Principal under the Digital Personal Data Protection Act, 2023, you have the following rights in respect of your personal data held by Growziq:</p>
+                <ul>
+                    <li><strong>Right to Access:</strong> Obtain a summary of your personal data we hold and how it has been processed.</li>
+                    <li><strong>Right to Correction:</strong> Request correction of inaccurate or incomplete personal data.</li>
+                    <li><strong>Right to Erasure:</strong> Request deletion of your personal data, subject to legal retention obligations.</li>
+                    <li><strong>Right to Grievance Redressal:</strong> File a complaint with Growziq's Grievance Officer.</li>
+                    <li><strong>Right to Nominate:</strong> Nominate another individual to exercise these rights on your behalf in the event of your death or incapacity.</li>
+                </ul>
+                <p>
+                    To exercise any of the above rights, email <a href="mailto:dev.growziq@gmail.com" class="text-brand-action hover:underline">dev.growziq@gmail.com</a> with the subject line <strong>"Data Rights Request - [Your Name]"</strong>. We will verify your identity before processing the request to prevent fraudulent data access or deletion.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="consent" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">7</span> Consent</h2>
+            </div>
+            <div class="legal-section-content">
+                <ul>
+                    <li>Consent to processing your personal data is obtained at the point of intake form submission via a mandatory, opt-in checkbox.</li>
+                    <li>The consent checkbox records: (a) your agreement to this Privacy Policy, (b) your agreement to the Terms of Service, (c) your confirmation that you are above 18 years of age and authorized to represent your business.</li>
+                    <li>Consent metadata recorded includes: submission timestamp, IP address, and form version. These records are retained for 36 months as evidence of valid consent.</li>
+                    <li>Consent is freely given, specific, informed, and unambiguous as required under the DPDP Act, 2023. The checkbox is not pre-ticked.</li>
+                    <li>You may withdraw consent at any time by contacting <a href="mailto:dev.growziq@gmail.com" class="text-brand-action hover:underline">dev.growziq@gmail.com</a>. Withdrawal does not apply retroactively to processing already performed under valid consent.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="security" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">8</span> Security &amp; Breach Response</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>Growziq implements reasonable technical and organizational measures to protect your personal data against unauthorized access, loss, alteration, or disclosure. Specific measures include:</p>
+                <ul>
+                    <li>Access to project data restricted to the two Growziq partners only - no third-party employees or contractors with data access.</li>
+                    <li>Client hosting credentials stored temporarily and deleted immediately upon handover.</li>
+                    <li>Project communications archived on password-protected accounts.</li>
+                    <li>Payment processing delegated entirely to Razorpay - Growziq never receives or stores card or banking credentials.</li>
+                </ul>
+                <p>
+                    In the event of a personal data breach likely to result in harm to you, Growziq will notify you at your registered email address as soon as reasonably practicable and comply with applicable notification obligations under the DPDP Act.
+                </p>
+                <div class="legal-callout">
+                    No method of data transmission or storage is 100% secure. While we implement best-effort security measures, Growziq cannot guarantee absolute security of your data.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="cookies" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">9</span> Cookies</h2>
+            </div>
+            <div class="legal-section-content">
+                <ul>
+                    <li>Growziq's website uses only essential cookies required for basic website functionality.</li>
+                    <li>No advertising cookies, tracking pixels, or behavioral profiling tools are used without your explicit consent.</li>
+                    <li>Google Analytics may be present for basic traffic analytics. If so, a cookie consent mechanism will be in place. Google Analytics data is anonymous and aggregated - it does not identify you personally.</li>
+                    <li>The Tally intake form embedded on the site may set functional cookies required for form operation. These are governed by Tally's cookie policy.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 10 -->
+        <section id="minors" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">10</span> Minors</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>
+                    Growziq's services are intended exclusively for persons above 18 years of age or business entities. We do not knowingly collect personal data from individuals below 18 years of age. The intake form requires confirmation that the submitter is above 18. If we become aware that we have inadvertently collected data from a person below 18, we will delete it immediately.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 11 -->
+        <section id="transfers" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">11</span> Cross-Border Transfers</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>
+                    Some of our third-party processors (Tally, Zapier, Google, Meta/WhatsApp) may store or process data on servers outside India. By consenting to this Privacy Policy, you acknowledge and consent to such transfers to the extent they occur in connection with delivering your project. Growziq itself operates from India and does not intentionally transfer your data outside India beyond what is incidental to our use of the above third-party processors.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 12 -->
+        <section id="updates" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">12</span> Policy Updates</h2>
+            </div>
+            <div class="legal-section-content">
+                <ul>
+                    <li>Growziq may update this Privacy Policy from time to time. Material changes will be notified to you via email at your registered address with at least 30 days advance notice.</li>
+                    <li>The updated Policy will be published at <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm">growziq.in/privacy</code> with a revised effective date.</li>
+                    <li>Continued engagement with Growziq's services after the effective date of an updated Policy constitutes acceptance of the revised terms.</li>
+                    <li>Changes do not apply retroactively to data already collected and processed under a prior version of this Policy.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 13 -->
+        <section id="law" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">13</span> Governing Law &amp; Disputes</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>This Privacy Policy is governed by the laws of India, including the Digital Personal Data Protection Act, 2023, the Information Technology Act, 2000, the IT (Reasonable Security Practices) Rules, 2011, and the Indian Contract Act, 1872.</p>
+                <p>Any disputes arising from this Privacy Policy shall be resolved in accordance with the dispute resolution mechanism set out in Growziq's <a href="tos.html" class="text-brand-action hover:underline">Terms of Service</a> - by arbitration in Ludhiana, Punjab.</p>
+            </div>
+        </section>
+
+        <!-- Section 14 -->
+        <section id="contact-us" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">14</span> Grievance Officer &amp; Contact</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>
+                    To file a data grievance or exercise your rights, email <a href="mailto:dev.growziq@gmail.com" class="text-brand-action hover:underline">dev.growziq@gmail.com</a> with subject: <strong>"Data Rights Request - [Your Name]"</strong>. Include your registered name, email, and the nature of your request. We will verify your identity before acting on any request.
+                </p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead><tr><th>Detail</th><th>Value</th></tr></thead>
+                        <tbody>
+                            <tr><td>Grievance Officer</td><td>Harman Kumar, Growziq</td></tr>
+                            <tr><td>Email</td><td><a href="mailto:dev.growziq@gmail.com" class="text-brand-action hover:underline">dev.growziq@gmail.com</a></td></tr>
+                            <tr><td>Response time</td><td>Within 7 business days</td></tr>
+                            <tr><td>Jurisdiction</td><td>Ludhiana, Punjab, India</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200 mt-10 mb-6">
+        <p class="text-center text-sm text-gray-400">- END OF PRIVACY POLICY -<br>Growziq &nbsp;&bull;&nbsp; growziq.in &nbsp;&bull;&nbsp; dev.growziq@gmail.com</p>
+        <p class="text-center mt-4">
+            <a href="index.html" class="text-brand-action hover:underline text-sm font-semibold">&larr; Back to Home</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="tos.html" class="text-brand-action hover:underline text-sm font-semibold">Terms of Service &rarr;</a>
+        </p>
+    </div>
+
+    <div class="legal-footer">
+        &copy; 2026 Growziq. All rights reserved.
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="growziq-footer">
+        <div class="footer-growziq-content">
+            <div class="footer-section">
+                <h4>Growziq</h4>
+                <p>Grow with us</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="services.html">Pricing &amp; Plans</a>
+                <a href="about.html">About Us</a>
+                <a href="portfolio.html">Our Work</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="tos.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <p><strong>dev.growziq@gmail.com</strong></p>
+                <a href="https://www.instagram.com/growziq/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Growziq&trade; | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu for legal pages (no SPA routing needed)
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        window.addEventListener('scroll', () => navbar.classList.toggle('shadow-sm', window.scrollY > 10));
+    </script>
+</body>
+</html>

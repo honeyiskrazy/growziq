@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Growziq - Who We Are & Why We Built This</title>
+    <meta name="description" content="We started Growziq because local businesses in India deserve affordable, professional websites without hidden fees or monthly retainers.">
+    <meta property="og:title" content="About Growziq - Our Story">
+    <meta property="og:description" content="Why we built Growziq: affordable websites for local businesses, with full ownership.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (via CDN for rapid single-file styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration & Custom CSS -->
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body class="bg-brand-white text-gray-600 font-poppins text-base">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="sticky top-0 left-0 w-full bg-brand-white border-b border-gray-100 z-50 transition-shadow duration-300">
+        <div class="max-w-container mx-auto px-4 sm:px-5 h-16 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="nav-link nav-logo flex items-center justify-center gap-2 h-full" data-target="home">
+                <img src="assets/img/logo.png" alt="Growziq" class="h-9 sm:h-10">
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center justify-center gap-7 lg:gap-8 font-medium text-[15px] lg:text-base h-full">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="home">Home</a>
+                <a href="services.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="services">Services & Pricing</a>
+                <a href="portfolio.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="portfolio">Portfolio</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-brand-action transition py-2 px-3 rounded-lg text-center" data-target="about">About</a>
+            </div>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center justify-end gap-4 h-full">
+                <button class="nav-link cta-premium hidden md:inline-flex" data-target="contact">
+                    <span>Get Started <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-brand-dark text-2xl" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg z-40">
+            <div class="flex flex-col items-center px-4 sm:px-5 py-3 gap-2.5 font-medium text-[15px] text-center">
+                <a href="index.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="home">Home</a>
+                <a href="services.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="services">Services & Pricing</a>
+                <a href="portfolio.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="portfolio">Portfolio</a>
+                <a href="about.html" class="nav-link w-full text-center text-gray-800 py-2.5 px-3 rounded-lg" data-target="about">About</a>
+                <button class="nav-link cta-premium w-full mt-2" data-target="contact">
+                    <span>Get Started <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main id="app-container">
+
+        <!-- ============================================== -->
+        <!-- VIEW: ABOUT                                    -->
+        <!-- ============================================== -->
+        <div id="view-about" class="view-section">
+            <section class="py-20 md:py-24 bg-white">
+                <div class="max-w-container mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="hero-headline text-4xl md:text-5xl text-brand-dark mb-6 leading-tight">We got tired of watching good businesses stay invisible online.</h1>
+                        <p class="text-lg text-gray-600">Local businesses shouldn't need a massive budget or a computer science degree to have a professional website.</p>
+                    </div>
+                    <div class="flex justify-center md:justify-end">
+                        <!-- Clean illustrated avatar representing the brand founders, using brand colors -->
+                        <div class="relative w-full max-w-[400px]">
+                            <div class="bg-brand-accent rounded-3xl h-[300px] w-full flex items-center justify-center p-8">
+                                <div class="flex gap-4 items-end">
+                                    <div class="bg-brand-action w-24 h-32 rounded-t-full shadow-lg border-4 border-white relative overflow-hidden flex items-end justify-center pb-2">
+                                        <i class="fa-solid fa-user text-white text-4xl opacity-50"></i>
+                                    </div>
+                                    <div class="bg-brand-cyan w-28 h-40 rounded-t-full shadow-lg border-4 border-white relative overflow-hidden flex items-end justify-center pb-2">
+                                        <i class="fa-solid fa-user text-white text-5xl opacity-50"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="border-b border-gray-200"></div>
+
+            <section class="py-20 bg-white">
+                <div class="max-w-container mx-auto px-5 max-w-3xl">
+                    <div class="bg-brand-accent p-8 md:p-12 rounded-2xl shadow-sm text-gray-700 text-lg space-y-6 leading-relaxed">
+                        <p>
+                            We started Growziq because we noticed a massive gap in the market. On one side, you have expensive agencies quoting &#8377;20,000+ for basic landing pages and trapping owners in monthly "maintenance" retainers. On the other side, you have DIY builders like Wix or WordPress that claim to be easy, but end up taking weeks to configure and often look unpolished.
+                        </p>
+                        <p>
+                            Most small business owners in India don't want a complicated tech project. They just want a digital storefront that looks trustworthy, loads fast, and tells customers what they do.
+                        </p>
+                        <p class="font-bold text-brand-dark">
+                            So we built a fixed-price solution. No corporate jargon. No hidden fees. We build your site, hand over the keys, and let you get back to running your business.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 bg-white">
+                <div class="max-w-container mx-auto px-5">
+                    <div class="text-center mb-16">
+                        <h2 class="section-headline text-3xl text-brand-dark">The Team</h2>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                        <div class="border border-gray-200 rounded-2xl p-8 flex items-start gap-6 hover:border-brand-action transition">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center shrink-0 text-brand-action text-2xl">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-brand-dark">Lead Developer</h3>
+                                <p class="text-sm text-brand-action font-semibold mb-3">Co-Founder</p>
+                                <p class="text-gray-600 text-sm">Ensures every website is built with clean, fast-loading code. No bloatware, just exactly what the business needs to perform.</p>
+                            </div>
+                        </div>
+                        <div class="border border-gray-200 rounded-2xl p-8 flex items-start gap-6 hover:border-brand-action transition">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center shrink-0 text-brand-cyan text-2xl">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-brand-dark">Client Strategy</h3>
+                                <p class="text-sm text-brand-cyan font-semibold mb-3">Co-Founder</p>
+                                <p class="text-gray-600 text-sm">Translates your business goals into the actual content and layout. Ensures the site converts visitors into real customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-brand-dark text-white border-b border-gray-800">
+                <div class="max-w-container mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-action to-brand-cyan mb-2">25+</div>
+                        <div class="text-gray-400 font-medium text-sm uppercase tracking-wide">Websites Delivered</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-action to-brand-cyan mb-2">20+</div>
+                        <div class="text-gray-400 font-medium text-sm uppercase tracking-wide">Happy Clients</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-action to-brand-cyan mb-2">4</div>
+                        <div class="text-gray-400 font-medium text-sm uppercase tracking-wide">Fixed Plans</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-action to-brand-cyan mb-2">&lt;7d</div>
+                        <div class="text-gray-400 font-medium text-sm uppercase tracking-wide">Avg Delivery Time</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 sm:py-20 bg-white text-center">
+                <div class="max-w-container mx-auto px-5">
+                    <div class="bg-brand-dark rounded-2xl py-14 sm:py-16 px-6 sm:px-10 shadow-sm">
+                        <h2 class="hero-headline text-3xl md:text-5xl text-white mb-10">Let's build something that works for your business.</h2>
+                        <div class="flex justify-center gap-4">
+                            <button class="nav-link cta-premium py-4 px-10 text-lg" data-target="contact">
+                                <span>Get Started <i class="fa-solid fa-arrow-right"></i></span>
+                            </button>
+                            <button class="nav-link border border-gray-600 text-gray-300 hover:text-white hover:border-gray-400 font-bold py-4 px-8 rounded-btn transition" data-target="portfolio">See Our Work</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- VIEW: CONTACT                                  -->
+        <!-- ============================================== -->
+        <div id="view-contact" class="view-section">
+            <section class="py-20 md:py-28 bg-brand-white">
+                <div class="max-w-container mx-auto px-5">
+                    <div class="max-w-2xl mx-auto text-center mb-14">
+                        <h1 class="hero-headline text-3xl md:text-5xl text-brand-dark mb-4">Tell Us About Your Business</h1>
+                        <p class="text-lg text-gray-600">We'll review and send your exact scope within 24 hours. No calls required.</p>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+                        <!-- Contact Form -->
+                        <div class="bg-white border border-gray-100 rounded-2xl p-8 md:p-10 shadow-sm">
+                            <h2 class="font-bold text-xl text-brand-dark mb-6">Send us a message</h2>
+                            <form onsubmit="event.preventDefault(); alert('Form submission simulation. In production, this would connect to your backend or Tally form.');" class="space-y-5">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Your Name *</label>
+                                    <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Business Name & Type *</label>
+                                    <input type="text" required placeholder="e.g. Sharma Sweets - Local Bakery" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Which plan are you interested in? *</label>
+                                    <select required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-600 focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                        <option value="" disabled selected>Please choose a plan...</option>
+                                        <option value="starter">Starter (&#8377;599)</option>
+                                        <option value="growth">Growth (&#8377;1,299) - Most Popular</option>
+                                        <option value="business">Business (&#8377;2,499)</option>
+                                        <option value="premium">Premium (&#8377;4,499)</option>
+                                        <option value="unsure">I'm not sure, help me decide</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address *</label>
+                                    <input type="email" required placeholder="name@example.com" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-1">WhatsApp Number (Optional)</label>
+                                    <input type="tel" placeholder="+91" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-action focus:ring-2 focus:ring-brand-action/20 transition">
+                                </div>
+                                <div class="flex items-start gap-3 py-2">
+                                    <input type="checkbox" required id="consent-about" class="mt-1 w-4 h-4 text-brand-action border-gray-300 rounded focus:ring-brand-action">
+                                    <label for="consent-about" class="text-xs text-gray-500 leading-tight">
+                                        I agree to the <a href="tos.html" class="text-brand-action hover:underline">Terms of Service</a> and <a href="privacy.html" class="text-brand-action hover:underline">Privacy Policy</a>. I confirm I am over 18 years of age.
+                                    </label>
+                                </div>
+                                <div class="pt-2">
+                                    <button type="submit" class="w-full cta-premium py-4">
+                                        <span>Submit Application <i class="fa-solid fa-paper-plane text-xs"></i></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Direct Contact Options -->
+                        <div class="space-y-6">
+                            <div>
+                                <h2 class="font-bold text-xl text-brand-dark mb-4">Prefer to talk directly?</h2>
+                                <p class="text-gray-600 text-sm mb-6">Drop us a WhatsApp message or email. We typically reply within a few hours during business hours (10 AM&ndash;7 PM IST).</p>
+                            </div>
+
+                            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
+                               class="flex items-center gap-4 p-5 bg-white border border-gray-100 rounded-xl hover:border-brand-action transition group shadow-sm">
+                                <div class="bg-green-100 text-green-600 p-3 rounded-lg group-hover:bg-brand-action group-hover:text-white transition">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-gray-900">WhatsApp</div>
+                                    <div class="text-sm text-gray-500">Chat with us directly</div>
+                                </div>
+                                <i class="fa-solid fa-arrow-right ml-auto text-gray-300 group-hover:text-brand-action transition"></i>
+                            </a>
+
+                            <a href="mailto:dev.growziq@gmail.com"
+                               class="flex items-center gap-4 p-5 bg-white border border-gray-100 rounded-xl hover:border-brand-action transition group shadow-sm">
+                                <div class="bg-brand-accent text-brand-action p-3 rounded-lg group-hover:bg-brand-action group-hover:text-white transition">
+                                    <i class="fa-solid fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-gray-900">Email Us</div>
+                                    <div class="text-sm text-gray-500">dev.growziq@gmail.com</div>
+                                </div>
+                                <i class="fa-solid fa-arrow-right ml-auto text-gray-300 group-hover:text-brand-action transition"></i>
+                            </a>
+
+                            <!-- Contact FAQ Integrated -->
+                            <div class="pt-4">
+                                <h3 class="font-bold text-lg text-brand-dark mb-4">Quick Questions</h3>
+                                <div class="space-y-3">
+                                    <details class="bg-white border border-gray-100 rounded-xl group cursor-pointer shadow-sm">
+                                        <summary class="font-bold text-gray-900 p-4 text-sm flex justify-between items-center">
+                                            What happens next?
+                                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                                        </summary>
+                                        <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed">
+                                            We review your details and email/WhatsApp you within 24 hours with a scope confirmation and next steps.
+                                        </div>
+                                    </details>
+                                    <details class="bg-white border border-gray-100 rounded-xl group cursor-pointer shadow-sm">
+                                        <summary class="font-bold text-gray-900 p-4 text-sm flex justify-between items-center">
+                                            Is submission free?
+                                            <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform"></i>
+                                        </summary>
+                                        <div class="px-4 pb-4 text-gray-600 text-xs leading-relaxed">
+                                            Yes, 100% free. We only charge when we officially agree to start building your site.
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="growziq-footer">
+        <div class="footer-growziq-content">
+            <div class="footer-section">
+                <h4>Growziq</h4>
+                <p>Grow with us</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="services.html">Pricing &amp; Plans</a>
+                <a href="about.html">About Us</a>
+                <a href="portfolio.html">Our Work</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="tos.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <p><strong>dev.growziq@gmail.com</strong></p>
+                <a href="https://www.instagram.com/growziq/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Growziq™ | All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

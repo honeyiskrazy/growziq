@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Growziq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body class="legal-page-body">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="sticky top-0 left-0 w-full bg-brand-white border-b border-gray-100 z-50 transition-shadow duration-300">
+        <div class="max-w-container mx-auto px-4 sm:px-5 h-16 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="nav-link nav-logo flex items-center justify-center gap-2 h-full" data-target="home">
+                <img src="assets/img/logo.png" alt="Growziq" class="h-9 sm:h-10">
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center justify-center gap-7 lg:gap-8 font-medium text-[15px] lg:text-base h-full">
+                <a href="index.html" class="text-gray-600 hover:text-brand-action hover:font-semibold transition py-2 px-3 rounded-lg text-center">Home</a>
+                <a href="services.html" class="text-gray-600 hover:text-brand-action hover:font-semibold transition py-2 px-3 rounded-lg text-center">Services & Pricing</a>
+                <a href="portfolio.html" class="text-gray-600 hover:text-brand-action hover:font-semibold transition py-2 px-3 rounded-lg text-center">Portfolio</a>
+                <a href="about.html" class="text-gray-600 hover:text-brand-action hover:font-semibold transition py-2 px-3 rounded-lg text-center">About</a>
+            </div>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center justify-end gap-4 h-full">
+                <button class="nav-link cta-premium hidden md:inline-flex" data-target="contact">
+                    <span>Get Started <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-brand-dark text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg z-40">
+            <div class="flex flex-col items-center px-4 sm:px-5 py-3 gap-2.5 font-medium text-[15px] text-center">
+                <a href="index.html" class="w-full text-center text-gray-800 py-2.5 px-3 rounded-lg">Home</a>
+                <a href="services.html" class="w-full text-center text-gray-800 py-2.5 px-3 rounded-lg">Services & Pricing</a>
+                <a href="portfolio.html" class="w-full text-center text-gray-800 py-2.5 px-3 rounded-lg">Portfolio</a>
+                <a href="about.html" class="w-full text-center text-gray-800 py-2.5 px-3 rounded-lg">About</a>
+                <button class="nav-link cta-premium w-full mt-2" data-target="contact">
+                    <span>Get Started <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="legal-hero">
+        <div class="max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-2 bg-white/10 text-white/80 text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+                <i class="fa-solid fa-file-contract text-brand-accent"></i> Legal Document
+            </div>
+            <h1>Terms of Service</h1>
+            <p class="meta mt-2">
+                Effective: April 2026 &nbsp;&bull;&nbsp; Last Updated: April 2026
+                &nbsp;&bull;&nbsp; Governed by: Indian Contract Act, 1872 &amp; IT Act, 2000
+            </p>
+            <p class="meta mt-1">
+                Also see: <a href="privacy.html">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="legal-content">
+
+        <div class="legal-callout">
+            <strong>By submitting our intake form and completing payment, you confirm that you have read, understood, and agree to be bound by these Terms in their entirety. If you do not agree, do not proceed.</strong>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="legal-toc">
+            <h4>Table of Contents</h4>
+            <ol>
+                <li><a href="#definitions">1. Definitions</a></li>
+                <li><a href="#agreement">2. How Agreement is Formed</a></li>
+                <li><a href="#scope">3. Scope of Services</a></li>
+                <li><a href="#contract-formation">4. Contract Formation &amp; Scope Version ID</a></li>
+                <li><a href="#payment">5. Pricing &amp; Payment</a></li>
+                <li><a href="#refunds">6. Refund Policy</a></li>
+                <li><a href="#client-obligations">7. Client Obligations &amp; Content</a></li>
+                <li><a href="#timeline">8. Timeline &amp; Delivery</a></li>
+                <li><a href="#revisions">9. Revisions &amp; Change Requests</a></li>
+                <li><a href="#delivery-acceptance">10. Delivery &amp; Acceptance (CONFIRM)</a></li>
+                <li><a href="#inactivity">11. Inactivity Protocol</a></li>
+                <li><a href="#support">12. Post-Delivery Support Period</a></li>
+                <li><a href="#hosting">13. Hosting &amp; Domain</a></li>
+                <li><a href="#ip">14. Intellectual Property</a></li>
+                <li><a href="#warranties">15. No Warranties</a></li>
+                <li><a href="#liability">16. Limitation of Liability</a></li>
+                <li><a href="#data">17. Data &amp; Privacy</a></li>
+                <li><a href="#governing-law">18. Governing Law &amp; Dispute Resolution</a></li>
+                <li><a href="#general">19. General Provisions</a></li>
+                <li><a href="#grievance">20. Contact &amp; Grievance</a></li>
+            </ol>
+        </div>
+
+        <!-- Section 1 -->
+        <section id="definitions" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">1</span> Definitions</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>The following terms shall have the meanings assigned to them throughout this Agreement:</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>"Growziq" / "We"</strong></td><td>The web design and development service operating as Growziq, Ludhiana, Punjab, India.</td></tr>
+                            <tr><td><strong>"Client" / "You"</strong></td><td>The individual or business entity that submits the intake form and contracts Growziq's services.</td></tr>
+                            <tr><td><strong>"Services"</strong></td><td>Web design, development, and related deliverables as specified in the Scope Confirmation Email.</td></tr>
+                            <tr><td><strong>"Scope Confirmation Email"</strong></td><td>The email from Growziq confirming deliverables, price, inclusions, exclusions, and applicable conditions.</td></tr>
+                            <tr><td><strong>"Scope Version ID"</strong></td><td>The unique identifier (Format: GRZ-YYYYMMDD-XX-V1) referencing the exact contractual deliverables. Authoritative over all other communications.</td></tr>
+                            <tr><td><strong>"CONFIRM"</strong></td><td>The Client's written message accepting final delivery, triggering ownership transfer and commencement of the Support Period.</td></tr>
+                            <tr><td><strong>"Change Request"</strong></td><td>Any request for work outside the confirmed Scope Version ID, subject to separate quotation and payment.</td></tr>
+                            <tr><td><strong>"Content"</strong></td><td>All text, images, logos, brand assets, and other materials provided by the Client for inclusion in the website.</td></tr>
+                            <tr><td><strong>"Service Start Date"</strong></td><td>The date on which both payment confirmation AND all required Content/access are received by Growziq.</td></tr>
+                            <tr><td><strong>"Support Period"</strong></td><td>The 7 calendar days commencing from the Client's written CONFIRM message.</td></tr>
+                            <tr><td><strong>"Handover"</strong></td><td>Transfer of all project files to the Client following CONFIRM and receipt of full payment.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="agreement" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">2</span> How Agreement is Formed</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>All three of the following actions are required to constitute a complete and binding contract under the Indian Contract Act, 1872 (Sections 2(a), 2(b), and 2(d)):</p>
+                <ul>
+                    <li>By submitting the Growziq intake form, the Client confirms they have read and agree to these Terms of Service and the Privacy Policy.</li>
+                    <li>By sending a written <strong>SCOPE CONFIRMED</strong> reply to Growziq's Scope Confirmation Email, the Client confirms acceptance of the specific deliverables, pricing, and conditions stated therein.</li>
+                    <li>By completing payment, the Client confirms entry into a binding contract with Growziq for the delivery of the confirmed scope.</li>
+                </ul>
+                <p>The Client confirms they are above 18 years of age and, where applicable, are authorized to enter into agreements on behalf of their business entity. Intake form submission alone does not constitute a contract.</p>
+                <p>These Terms may be updated by Growziq with thirty (30) days' written notice via email. Updates do not apply retroactively to projects already confirmed and paid.</p>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="scope" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">3</span> Scope of Services</h2>
+            </div>
+            <div class="legal-section-content">
+                <h3>3.1 Master Scope Rule</h3>
+                <p>Only what is explicitly listed in the Client's confirmed Scope Version ID is included in the service. Anything not listed is excluded, regardless of verbal discussion, prior communication, or common industry practice.</p>
+
+                <h3>3.2 Plan Definitions</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead><tr><th>Plan</th><th>Price</th><th>Key Inclusions</th><th>Est. Delivery</th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Starter</strong></td>
+                                <td>&#8377;599</td>
+                                <td>1 page, Mobile Responsive, Content placement (client-provided), Custom link integration, Standard template, Google Maps. (Excludes SEO, Admin Panel, GA/GSC).</td>
+                                <td>~3 days</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Growth</strong></td>
+                                <td>&#8377;999</td>
+                                <td>Up to 4 pages, GA/GSC setup, Meta tags, Schema, Image Alt tags, OG tags, Basic keyword placement, Canonical, XML Sitemap. (Excludes Admin Panel).</td>
+                                <td>~5 days</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Business</strong></td>
+                                <td>&#8377;2,499</td>
+                                <td>Up to 6 pages, Full on-page SEO (Meta, Alt, Sitemap, Robots, Schema, OG, Header structure, Canonical), GA4 setup, GSC setup. (Excludes Admin Panel, Content writing, Product upload).</td>
+                                <td>~10 days</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Premium</strong></td>
+                                <td>&#8377;4,499</td>
+                                <td>Up to 10 pages, Premium design, Full on-page SEO, 5 content-only edits (30 days). (Excludes Admin Panel, Content writing, Product upload, design changes post-CONFIRM).</td>
+                                <td>~14+ days</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><em>Delivery timelines are estimates only, contingent on timely provision of Content and feedback by the Client.</em></p>
+
+                <h3>3.3 Add-On Services</h3>
+                <p>All add-ons must be approved in writing and paid in full before implementation. Minimum add-on charge: &#8377;199.</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead><tr><th>Add-On</th><th>Price</th></tr></thead>
+                        <tbody>
+                            <tr><td>Extra Page (1 additional HTML file / URL route)</td><td>&#8377;299 / page</td></tr>
+                            <tr><td>Admin Panel - Simple (Client-editable text/images)</td><td>&#8377;799</td></tr>
+                            <tr><td>Admin Panel - Product (Product/dashboard management)</td><td>&#8377;1,499</td></tr>
+                            <tr><td>Product Upload (Upload, categorize, format data)</td><td>&#8377;19 / product (min &#8377;299)</td></tr>
+                            <tr><td>Domain Setup (Connect domain via DNS)</td><td>&#8377;199</td></tr>
+                            <tr><td>Speed Optimisation - Basic (Caching, compression)</td><td>&#8377;299</td></tr>
+                            <tr><td>Speed Optimisation - Advanced (Full performance audit)</td><td>&#8377;699</td></tr>
+                            <tr><td>SEO Report + Fix (One-time on-page improvements)</td><td>&#8377;499</td></tr>
+                            <tr><td>Additional Edits (Post-support period)</td><td>&#8377;99 – &#8377;299 / change</td></tr>
+                            <tr><td>Custom Features (Quoted after review)</td><td>&#8377;499 – &#8377;2,999+</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="contract-formation" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">4</span> Contract Formation &amp; Scope Version ID</h2>
+            </div>
+            <div class="legal-section-content">
+                <ul>
+                    <li><strong>Step 1 - Offer:</strong> Growziq sends the Scope Confirmation Email containing the Scope Version ID, exact deliverables, pricing, inclusions, exclusions, and applicable conditions.</li>
+                    <li><strong>Step 2 - Acceptance:</strong> The Client replies in writing with "SCOPE CONFIRMED" or equivalent written acceptance. Verbal acceptance is not valid.</li>
+                    <li><strong>Step 3 - Consideration:</strong> The Client completes payment via the invoice link provided by Growziq.</li>
+                </ul>
+                <p>The <strong>Scope Version ID</strong> referenced in the Scope Confirmation Email and payment invoice is the definitive identifier of the contractual deliverables. Any prior discussions, messages, or verbal communications not captured in the Scope Confirmation Email are not part of the contract.</p>
+                <p>Custom pricing, discounts, or complimentary services are valid only when documented in the Scope Confirmation Email with the Scope Version ID. Verbal promises of custom pricing are not binding.</p>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="payment" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">5</span> Pricing &amp; Payment</h2>
+            </div>
+            <div class="legal-section-content">
+                <ul>
+                    <li>All services are priced on a <strong>one-time, upfront basis</strong>. No recurring charges apply unless explicitly stated in the Scope Confirmation Email.</li>
+                    <li>Payment is due in full prior to commencement of any work. Growziq reserves the right to refuse commencement until payment is confirmed.</li>
+                    <li>Payment is accepted via Growziq's official invoice link only. Growziq bears no responsibility for payments made to any other account, UPI ID, or channel not verified in writing by Growziq.</li>
+                    <li>Invoices are issued per project and are valid for single use. Each invoice references the applicable Scope Version ID, plan name, and Client business name.</li>
+                    <li>Growziq is currently unregistered for GST and is exempt under applicable threshold provisions of the CGST Act, 2017. Invoices will not include GST. Clients requiring GST-compliant invoices should notify Growziq before payment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="refunds" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">6</span> Refund Policy</h2>
+            </div>
+            <div class="legal-section-content">
+                <div class="legal-callout">
+                    <strong>No refund shall be issued once work has commenced.</strong> Work is deemed to have commenced upon the Service Start Date - the date Growziq receives both payment confirmation AND all required Content and access from the Client. Commencement is NOT the payment date alone.
+                </div>
+                <p>Where Growziq is demonstrably unable to deliver the confirmed scope due to Growziq's own failure, a partial or full refund may be considered at Growziq's sole discretion. This exception does not apply where non-delivery results from the Client's failure to provide Content, access, or cooperation.</p>
+            </div>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="client-obligations" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">7</span> Client Obligations &amp; Content</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>The Client shall provide all required Content within <strong>fifteen (15) days</strong> of payment confirmation. Required Content includes but is not limited to: business logo, brand assets, photographs, all text content, links, and hosting/domain access credentials.</p>
+                <p>The Client is solely and entirely responsible for:</p>
+                <ul>
+                    <li>The accuracy, truthfulness, and completeness of all Content provided.</li>
+                    <li>The legal ownership and right to use all Content provided, including images, logos, text, trademarks, and any third-party material.</li>
+                    <li>Ensuring that Content does not infringe any third party's intellectual property rights, right of privacy, or any applicable law.</li>
+                    <li>Compliance with all applicable laws in relation to the Client's business and website content.</li>
+                </ul>
+                <p>Growziq shall bear no liability whatsoever for any claim, loss, or damage arising from Content provided by the Client.</p>
+                <p>Where the Client is a business entity, the individual submitting the intake form warrants that they have authority to bind the business entity to these Terms.</p>
+            </div>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="timeline" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">8</span> Timeline &amp; Delivery</h2>
+            </div>
+            <div class="legal-section-content">
+                <ul>
+                    <li>Work commences only after both conditions are met: (a) payment is confirmed by Growziq, AND (b) all required Content and access are received by Growziq. The Service Start Date is the date both conditions are satisfied.</li>
+                    <li>Delivery timelines are estimates only and are contingent upon the Client's timely provision of Content, feedback, and access. Growziq is not liable for delays caused by the Client's failure to cooperate or respond.</li>
+                    <li>Feedback and change requests must be submitted in writing via email or WhatsApp. Verbal feedback communicated during calls must be confirmed in writing before Growziq is obligated to act upon it.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="revisions" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">9</span> Revisions &amp; Change Requests</h2>
+            </div>
+            <div class="legal-section-content">
+                <ul>
+                    <li>The number of revision rounds included is specified in the Scope Confirmation Email. A "round" of revisions constitutes all feedback submitted within a single 24-hour period.</li>
+                    <li>Layout changes, adding new features, or changing major design elements after work has started are considered Change Requests and are chargeable.</li>
+                    <li>Small text or image swaps are generally included within the confirmed scope, but Growziq reserves the right to categorize frequent small requests as separate Change Requests.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 10 -->
+        <section id="delivery-acceptance" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">10</span> Delivery &amp; Acceptance (CONFIRM)</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>Upon completion of the project, Growziq will send a final delivery preview. The Client shall review and provide a written <strong>CONFIRM</strong> message within three (3) days.</p>
+                <p>By issuing a CONFIRM message, the Client acknowledges that:</p>
+                <ul>
+                    <li>The deliverables are in accordance with the confirmed Scope Version ID.</li>
+                    <li>The 7-day Support Period commences from the date and time of CONFIRM.</li>
+                    <li>Growziq's delivery obligation under the contract is fulfilled.</li>
+                </ul>
+                <p>Issues not raised before CONFIRM - including issues the Client could have identified upon reasonable review - are not Growziq's obligation to remedy free of charge after CONFIRM is issued.</p>
+                <div class="legal-callout">
+                    Valid forms of CONFIRM (in order of legal strength): (a) Email reply referencing Scope Version ID, (b) Email reply with "CONFIRM" / "OK final" / "Approved", (c) WhatsApp message with written CONFIRM. <strong>Verbal confirmation via call is not valid without subsequent written confirmation.</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11 -->
+        <section id="inactivity" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">11</span> Inactivity Protocol</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>To ensure project momentum, the following inactivity rules apply:</p>
+                <ul>
+                    <li><strong>15 Days:</strong> If the Client fails to provide required Content or feedback for 15 consecutive days, the project is moved to "On Hold" status.</li>
+                    <li><strong>30 Days:</strong> If inactivity reaches 30 consecutive days, the project is deemed <strong>Terminated by Inactivity</strong>.</li>
+                </ul>
+                <p>Upon Termination by Inactivity, Growziq's obligations end, the project is closed, and all payments made are forfeited. To restart a terminated project, the Client must pay a Restart Fee of &#8377;199 or 20% of the project value (whichever is higher).</p>
+            </div>
+        </section>
+
+        <!-- Section 12 -->
+        <section id="support" class="legal-section">
+            <div class="legal-section-aside">
+                <h2><span class="legal-section-number">12</span> Post-Delivery Support Period</h2>
+            </div>
+            <div class="legal-section-content">
+                <p>Growziq provides a Support Period of <strong>seven (7) calendar days</strong> commencing from the date and time of the Client's written CONFIRM message.</p>
+                <h3>Covered under the Support Period:</h3>
+                <ul>
+                    <li>Errors in Growziq's implementation - features in the confirmed scope that are non-functional or inaccessible due to Growziq's error.</li>
+                    <li>Missing scope items - deliverables explicitly listed in the confirmed Scope Version ID that were not included in the final delivery.</li>
+                </ul>
+                <h3>NOT covered under the Support Period:</h3>
+                <ul>
+                    <li>Layout changes or design modifications.</li>
+                    <li>Addition of new pages or sections.</li>
+                    <li>Updates to Content (text/images) unless covered by a Premium plan's specific terms.</li>
+                    <li>Any request that constitutes a Change Request.</li>
+                </ul>
+                <p>After the Support Period ends, all work is chargeable at applicable add-on rates. There is no grace period.</p>
+                <p><strong>Premium plan clients:</strong> The 5 content-only edits within 30 days of CONFIRM are separate from and additional to the 7-day Support Period. These edits cover text and image swaps only - not layout changes, new pages, or feature additions. Each individual request constitutes one edit.</p>
+            </div>
+        </section>
+
+        <!-- Section 13 -->
+            <li>Any consequences arising from the Client's failure to maintain or renew hosting or domain.</li>
+        </ul>
+
+        <!-- Section 14 -->
+        <h2 id="ip"><span class="legal-section-number">14</span> Intellectual Property</h2>
+        <ul>
+            <li>Upon receipt of full payment and the Client's written CONFIRM, Growziq assigns to the Client all of Growziq's original work product created specifically for that project, including original design elements, custom code, and layout structure unique to the project.</li>
+            <li>Third-party components including open-source frameworks, libraries, plugins, templates, and tools used in the project remain under their respective licenses. Growziq does not and cannot assign third-party intellectual property. The Client accepts responsibility for compliance with applicable third-party licenses.</li>
+            <li>The Client owns all Content they provide at all times. Growziq's use of Client Content is limited solely to delivering the agreed services.</li>
+            <li>Until full payment is received and CONFIRM is issued, all work product remains the intellectual property of Growziq.</li>
+            <li>Growziq retains the right to display completed projects in its portfolio and promotional materials unless the Client expressly requests otherwise in writing prior to project commencement.</li>
+        </ul>
+
+        <!-- Section 15 -->
+        <h2 id="warranties"><span class="legal-section-number">15</span> No Warranties</h2>
+        <p>Growziq provides no guarantee, representation, or warranty regarding:</p>
+        <ul>
+            <li>Search engine rankings, indexing timelines, or organic traffic.</li>
+            <li>Website performance on third-party hosting platforms.</li>
+            <li>Business outcomes, sales, revenue, leads, or conversions resulting from the website.</li>
+            <li>Compatibility with all browsers, devices, or screen sizes beyond standard mobile responsiveness.</li>
+            <li>Continued availability or functionality of third-party tools, plugins, or platforms integrated into the website.</li>
+        </ul>
+        <p>SEO services included in plans constitute technical on-page SEO implementation only. Growziq does not guarantee any specific search engine ranking, position, or traffic outcome. Website performance metrics are achieved on a best-effort basis and may vary based on the Client's hosting environment and content.</p>
+
+        <!-- Section 16 -->
+        <h2 id="liability"><span class="legal-section-number">16</span> Limitation of Liability</h2>
+        <p>To the maximum extent permitted by applicable law, Growziq's total aggregate liability to the Client for any claim arising from or related to these Terms or the services provided shall not exceed the <strong>total amount paid by the Client for the specific project giving rise to the claim</strong>.</p>
+        <p>Growziq shall not be liable for any indirect, incidental, consequential, special, exemplary, or punitive damages, including but not limited to loss of profits, loss of revenue, loss of data, loss of business opportunity, or reputational harm.</p>
+        <p>Growziq shall not be liable for any loss or damage arising from: the Client's failure to maintain hosting or domain; third-party platform failures, policy changes, or discontinuation; Content provided by the Client that is inaccurate, illegal, or infringing; the Client's own business decisions or outcomes; or force majeure events including natural disasters, power failures, internet outages, or government actions.</p>
+        <div class="callout">This limitation of liability clause is a fundamental element of the basis of the bargain between the parties and shall survive termination of this Agreement.</div>
+
+        <!-- Section 17 -->
+        <h2 id="data"><span class="legal-section-number">17</span> Data &amp; Privacy</h2>
+        <p>Growziq collects and processes personal data solely for the purpose of delivering the services agreed under this contract. Full details are set out in Growziq's <a href="privacy.html" class="text-brand-action hover:underline">Privacy Policy</a>. By proceeding with Growziq's services, the Client consents to the processing of their personal data as described therein.</p>
+        <p>Grievance Officer for data-related complaints: Harman Kumar, <a href="mailto:dev.growziq@gmail.com" class="text-brand-action hover:underline">dev.growziq@gmail.com</a>. Complaints will be addressed within seven (7) business days.</p>
+
+        <!-- Section 18 -->
+        <h2 id="governing-law"><span class="legal-section-number">18</span> Governing Law &amp; Dispute Resolution</h2>
+        <p>These Terms are governed by and construed in accordance with the laws of India, including the Indian Contract Act, 1872, the Information Technology Act, 2000, and the Digital Personal Data Protection Act, 2023.</p>
+        <ul>
+            <li>The parties shall first attempt to resolve any dispute through <strong>good-faith negotiation</strong> for a period of thirty (30) days from the date either party notifies the other of the dispute in writing.</li>
+            <li>If unresolved within thirty (30) days, the dispute shall be referred to and finally resolved by <strong>arbitration</strong> under the Arbitration and Conciliation Act, 1996, conducted by a sole arbitrator mutually agreed upon by the parties, held in Ludhiana, Punjab, India, in the English language. The arbitrator's award shall be final and binding on both parties.</li>
+            <li>Nothing in this clause prevents either party from seeking urgent interim relief from a competent court where necessary to prevent irreparable harm.</li>
+            <li>Subject to the arbitration clause above, the courts at Ludhiana, Punjab shall have exclusive jurisdiction over any matters arising from this Agreement.</li>
+        </ul>
+
+        <!-- Section 19 -->
+        <h2 id="general"><span class="legal-section-number">19</span> General Provisions</h2>
+        <ul>
+            <li><strong>Entire Agreement:</strong> These Terms, together with the Scope Confirmation Email, SCOPE CONFIRMED reply, and Payment Receipt, constitute the entire agreement between the parties and supersede all prior negotiations, representations, or agreements.</li>
+            <li><strong>Severability:</strong> If any provision is held invalid or unenforceable, the remaining provisions shall continue in full force and effect.</li>
+            <li><strong>Waiver:</strong> Failure by Growziq to enforce any provision shall not constitute a waiver of Growziq's right to enforce that provision in the future.</li>
+            <li><strong>No Partnership:</strong> Nothing in these Terms creates a partnership, joint venture, agency, or employment relationship between the parties.</li>
+            <li><strong>Electronic Records:</strong> Electronic communications, including emails and WhatsApp messages, constitute valid legal records under the Information Technology Act, 2000 and the Indian Evidence Act, 1872 (as amended). Electronic acceptance and confirmation are legally binding.</li>
+            <li><strong>Amendment:</strong> Growziq may amend these Terms with thirty (30) days written notice. Amendments do not apply to projects already contracted and paid prior to the amendment effective date.</li>
+            <li><strong>Language:</strong> These Terms are written in English. In case of any conflict between an English version and any translated version, the English version shall prevail.</li>
+        </ul>
+
+        <!-- Section 20 -->
+        <h2 id="grievance"><span class="legal-section-number">20</span> Contact &amp; Grievance</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead><tr><th>Detail</th><th>Value</th></tr></thead>
+                <tbody>
+                    <tr><td>Company Name</td><td>Growziq</td></tr>
+                    <tr><td>Email</td><td><a href="mailto:dev.growziq@gmail.com" class="text-brand-action hover:underline">dev.growziq@gmail.com</a></td></tr>
+                    <tr><td>Jurisdiction</td><td>Ludhiana, Punjab, India</td></tr>
+                    <tr><td>Instagram</td><td><a href="https://www.instagram.com/growziq/" target="_blank" rel="noopener noreferrer" class="text-brand-action hover:underline">@growziq</a></td></tr>
+                    <tr><td>Response Time</td><td>Within 24 hours (business queries) / 7 business days (legal disputes)</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr class="border-gray-200 mt-10 mb-6">
+        <p class="text-center text-sm text-gray-400">- END OF TERMS OF SERVICE -<br>Growziq &nbsp;&bull;&nbsp; growziq.in &nbsp;&bull;&nbsp; dev.growziq@gmail.com<br>Effective: April 2026 | Last Updated: April 2026</p>
+        <p class="text-center mt-4">
+            <a href="index.html" class="text-brand-action hover:underline text-sm font-semibold">&larr; Back to Home</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="privacy.html" class="text-brand-action hover:underline text-sm font-semibold">Privacy Policy &rarr;</a>
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="growziq-footer">
+        <div class="footer-growziq-content">
+            <div class="footer-section">
+                <h4>Growziq</h4>
+                <p>Grow with us</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="services.html">Pricing &amp; Plans</a>
+                <a href="about.html">About Us</a>
+                <a href="portfolio.html">Our Work</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="tos.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <p><strong>dev.growziq@gmail.com</strong></p>
+                <a href="https://www.instagram.com/growziq/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Growziq&trade; | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu for legal pages (no SPA routing needed)
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        window.addEventListener('scroll', () => navbar.classList.toggle('shadow-sm', window.scrollY > 10));
+    </script>
+</body>
+</html>
